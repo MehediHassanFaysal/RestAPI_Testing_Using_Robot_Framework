@@ -23,7 +23,7 @@ TC1: Return the list of all books along with description (GET)
 
 TC2: Add a new book resource (POST)
     Create Session    mysession     ${base_url}
-    ${body}=    Create Dictionary    id=206    title=Robot Framework    description=RestAPI Automation in python usibg robot framework      pageCount=50    excerpt=string    publishDate=2022-12-16T05:43:22.937Z
+    ${body}=    Create Dictionary    id=200    title=Robot Framework    description=RestAPI Automation in python usibg robot framework      pageCount=50    excerpt=string    publishDate=2022-12-16T05:43:22.937Z
     ${header}=  Create Dictionary    Content-Type=application/json
     ${response}=    Post Request    mysession   ${relative_uli}       data=${body}       headers=${header}
 
