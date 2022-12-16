@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20221216 17:16:13.430" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20221216 17:31:51.665" rpa="false" schemaversion="3">
 <suite id="s1" name="TC" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\TestCases\TC.robot">
 <test id="s1-t1" name="TC1: Return the list of all books along with description (GET)" line="13">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:16:13.633" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:16:13.633" endtime="20221216 17:16:13.633"/>
+<msg timestamp="20221216 17:31:51.951" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:31:51.951"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
 <arg>${relative_uli}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20221216 17:16:13.633" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:16:37.518" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
+<msg timestamp="20221216 17:31:51.951" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221216 17:32:12.320" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
  path_url=/api/v1/Books 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:16:37.518" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
+<msg timestamp="20221216 17:32:12.320" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:16:14 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body=[{"id":1,"title":"Book 1","description":"Accusam nonumy gubergren sanctus. Consetetur aliquyam sanctus gubergren sit labore labore sit amet. Adipiscing et justo luptatum ea molestie ipsum in dolores dolore dolor dolore commodo eirmod et. Erat labore et aliquip eos dolore volutpat rebum sadipscing magna sed sanctus erat voluptua eu consequat ea ullamcorper lorem. Erat lorem eros ipsum at amet molestie kasd feugiat diam et dolore no consequat duis dolores. Dolor clita no labore dolor dignissim erat sanctus nulla dolor. Accusam voluptua erat sanctus possim quod duis vel eros. Aliquip eirmod consectetuer kasd sanctus stet sadipscing et stet. Et diam takimata consequat. Sed accumsan dolores nulla consetetur. Clita et euismod stet veniam eum duo consequat sit labore et est et aliquyam magna. Zzril imperdiet invidunt justo gubergren sed duo eos mazim magna sea congue labore eros lorem justo duis eos no. Rebum dolor sed clita iriure doming at sadipscing accusam voluptua ea aliquyam dolor ex. Sea no erat invidunt sea accusam lorem vel facer dolor. Volutpat eirmod sea. Magna et accusam ipsum ut rebum eirmod ea justo mazim ullamcorper.\n","pageCount":100,"excerpt":"Et esse sit at dolore consetetur dolore dolor duis tincidunt ipsum ut facilisis feugiat. Ea at magna lobortis sadipscing kasd et est dolore. Eirmod vero eirmod sed sit sea. Dolor eum clita dolore gubergren duis tempor dolores te ipsum. Nostrud labore lobortis labore nam sit. Voluptua nulla accumsan justo eros dolore erat invidunt ipsum gubergren qui. At vero et lorem elitr dolor ipsum et diam. Accusam diam lorem clita est. Duis diam nonumy dolor labore invidunt dolore gubergren magna magna. Feugait hendrerit facer duis amet lorem gubergren ex in. Labore erat dignissim eum lorem erat sit. Dolor eu elitr ut justo stet ipsum hendrerit sit stet takimata sea vel ut delenit et diam justo feugiat. Esse accusam at gubergren adipiscing facer ut gubergren stet tempor gubergren vero clita et sit invidunt molestie vero iusto.\nZzril no at et justo rebum vero lorem. Ad dolor voluptua augue sit at ut dolor. Consetetur eirmod aliquip clita nobis nonumy nibh duo aliquyam nibh sanctus iusto aliquyam amet sadipscing lorem. Kasd et eos lorem eirmod sit vulputate ipsum sit dolor amet diam invidunt vero dolor. Sadipscing kasd doming invidunt dolores et. Nulla amet duo vulputate commodo duo. Accumsan eu rebum lorem rebum nonumy amet justo eos feugait sed et consequat labore sed. Sit dolores accumsan sea. Aliquyam eirmod ipsum sit sanctus erat. Erat ut clita augue lorem hendrerit dolor diam et no voluptua tincidunt amet ea tincidunt. Nonumy sanctus ea et facilisis dolor vel sanctus labore ipsum dolor et sea justo. Suscipit tation gubergren clita sea nulla vel takimata. Erat velit dolor.\nConsequat magna est sed nulla elitr molestie ipsum dolore stet odio sit. Eos sanctus takimata ea id hendrerit. Invidunt no ipsum magna voluptua erat voluptua lorem magna et sanctus sea amet diam at. Luptatum aliquyam eos amet laoreet consectetuer tincidunt vel vero diam tation laoreet illum stet eirmod. Erat ipsum diam dolor sea consequat nulla eirmod elitr sanctus tempor gubergren eos tempor dolor nonummy kasd dolor laoreet.\nDolor takimata clita iusto facilisis at eirmod justo lorem et soluta et consetetur velit ea ea. Elitr at duo te aliquip eleifend in et minim amet in. Dolor gubergren eos eos nostrud dolor feugiat est hendrerit lorem sit lorem ipsum dolore nulla. Tempor takimata diam sed lobortis accusam lobortis amet in molestie.\nStet elitr justo ad amet. Erat diam clita duis elitr et et dolor tempor stet ea vero duo. Eirmod eirmod sea dolor sanctus magna duis eos dolor. Sit eos amet minim aliquyam nulla dolor no amet diam et accumsan magna sed ut et eirmod sit dolor. Nobis exerci at sit sit augue dolor tempor eirmod stet sadipscing sadipscing eos invidunt esse. Sea lorem tempor kasd et rebum kasd duis sadipscing lorem et ea sea. Sed diam erat invidunt molestie takimata rebum consequat congue et vero sadipscing te lorem voluptua et iriure. Rebum takimata dolore erat invidunt qui sea ipsum eirmod sit cum. Rebum diam kasd ea dolor diam tempor kasd consequat ea laoreet sit sit dolore gubergren. Lobortis diam sed dolore blandit sed est nisl ipsum justo eum et ut.\n","publishDate":"2022-12-15T11:16:14.6083478+00:00"},{"id":2,"title":"Book 2","description":"Justo dolor diam sanctus dolor gubergren sed magna esse erat dolor. Tempor ipsum iriure molestie feugiat sit lorem stet dolore enim hendrerit eirmod exerci esse et nostrud. Et dolores et ea accusam elitr erat et amet kasd velit no et ea adipiscing. Iusto erat est nonumy sea et magna at duis in in sit eleifend invidunt amet amet sit ipsum.\n","pageCount":200,"excerpt":"Stet dolor iriure eos accusam sed amet sea sed adipiscing delenit dolore magna. Facilisis dolor sadipscing ea elit veniam at nulla et ipsum dolores sit diam. Diam diam diam et nonumy sanctus takimata sadipscing vel amet sed labore vero rebum vero liber. Magna justo iusto clita erat eirmod exerci est diam erat. No eos sadipscing nulla dolor dolore doming no sea nisl. Elitr dignissim eos invidunt zzril aliquyam dignissim et clita ea ut. Accusam te magna consectetuer takimata labore elitr sit justo elitr aliquyam in takimata at stet ipsum. Sadipscing rebum et justo sed tempor ea euismod voluptua dolor eu labore et ipsum sed kasd diam amet et. Sit est lorem duis at sit nulla eos exerci amet imperdiet est feugait eirmod et ipsum accusam at. Odio eirmod voluptua euismod ex ut sadipscing ipsum delenit vero aliquyam duo. Rebum sed gubergren vero.\nSadipscing adipiscing amet aliquyam amet takimata ad lobortis nisl amet magna dolore et consetetur lobortis et. Ipsum vero lorem dolores. Nonumy ipsum consequat est vel amet diam ut iriure aliquyam sed elitr lorem tation dolores accusam sit dolor liber. Nonumy diam lorem zzril nonumy takimata id est. Eirmod et gubergren et elitr elitr stet id kasd et dolor elitr magna no volutpat placerat. Nonumy facilisi dolore augue diam magna feugait eos. Takimata quis elitr accumsan duo quis invidunt consetetur est magna sed aliquyam delenit euismod sadipscing dolore erat. Sed sanctus et sanctus qui. Consetetur aliquip accusam sea takimata eos voluptua. Dolores in amet et kasd nonummy sed dolore et tempor clita ea magna laoreet dolores justo ipsum. Lobortis invidunt eirmod euismod ut zzril dolor. Erat liber stet possim diam nonumy eirmod autem duo takimata nulla sanctus lorem et amet amet et minim. Iusto sed sed duis commodo eum nam et nihil erat sit ea facilisis diam et. Diam kasd sanctus sit ut lorem ea et amet accusam invidunt erat et sed dolor gubergren. Et consequat takimata euismod accusam delenit invidunt labore vulputate dolores clita amet cum velit. Magna justo suscipit sadipscing gubergren tempor ipsum sea diam facilisi eirmod et labore nisl. Clita praesent magna amet est ut sanctus magna elitr ipsum sit et magna rebum.\nSit no ut ipsum et dolor te nisl et amet enim nonumy. Nonumy amet velit consequat eirmod facilisi gubergren dolore feugiat duo illum kasd duis voluptua ullamcorper lorem labore sea. Dolor accusam lorem dolore ut ut consectetuer clita duo et consequat erat sadipscing dolor erat et amet. Aliquip illum lorem kasd. Sit dolor ut dolores accusam et dolore ut eos sit esse accusam dignissim nonummy diam et. Molestie feugait id et et sed eirmod sed voluptua feugait. Eu eirmod amet autem. Elitr stet invidunt augue sadipscing amet wisi duo voluptua dolore. Ullamcorper tempor dolor praesent justo accusam no ea duo vel rebum vulputate dolor luptatum dolor. Sit erat ea at adipiscing diam duo veniam elitr. Sadipscing dolore dolor dolor diam mazim suscipit diam. Aliquyam sit gubergren blandit quis et sea magna qui no ea.\nAdipiscing consequat iriure eirmod nonummy ut sit. Accumsan voluptua quod molestie. Duo et consetetur duis ipsum lorem est gubergren gubergren. Magna sed at dolore sed adipiscing dolores diam nonumy aliquam magna et sadipscing sed nibh autem adipiscing. Dolore nonumy dolor duo et stet facilisis et et iusto sea.\nSed dolor nonumy et odio takimata eirmod diam est erat zzril. At magna voluptua dolor exerci nisl amet ea ut doming dolor. Et tempor amet justo vel diam lorem dolores sed sea eum at sed suscipit labore amet sadipscing. Dolore sadipscing ut dolor euismod gubergren sed sed et erat et sadipscing amet sanctus takimata erat. Dolore ea in voluptua commodo ea stet. Justo sit veniam lorem ad zzril nonumy. Takimata enim eirmod. Accusam sea dolore eu diam exerci dolor vero. Voluptua dolor justo sadipscing lorem esse takimata vero accusam sit dolore amet clita dolores in. Nibh dolor justo delenit sit veniam dolore lorem ipsum nulla rebum. Ipsum autem illum nonummy. Justo in nobis dolor lorem ipsum. Sanctus dolore vel zzril takimata voluptua sanctus voluptua duo ea odio dolores sit. Labore vero ea augue. Dolores nonumy sit amet dolore invidunt rebum ut vulputate amet diam vero sadipscing nonumy. Et at stet dolor dolore diam gubergren nostrud dolores et sadipscing erat lorem eos no soluta nihil magna duis.\n","publishDate":"2022-12-14T11:16:14.608438+00:00"},{"id":3,"title":"Book 3","description":"Sea delenit eos sed nonumy takimata rebum quis duis hendrerit kasd duo eirmod sit est labore rebum est facilisis. Elit stet tincidunt lorem iriure duo sadipscing euismod amet dolor vel. Est suscipit clita. Ea augue justo in velit stet ea. Vel illum amet gubergren accusam consequat. Et sit est labore. Accusam dolore kasd est rebum magna et rebum sit sed invidunt. Diam est aliquyam sadipscing ea sea erat takimata facilisis lorem ut stet et eros. Rebum vulputate et nobis voluptua zzril veniam ipsum nonumy at. Consetetur labore justo et. Consetetur duo erat in nonumy accusam at eos ipsum sit sit luptatum vero et sed nonumy diam invidunt. Nobis gubergren ut labore elitr et. Enim sit duis magna enim ea eirmod nonumy consequat veniam duo ea ea autem. Ut consetetur elit et aliquyam et at no aliquam sanctus eu. Ipsum tempor sed et invidunt eos. Sed a... (set the log level to DEBUG or TRACE to see the full content) 
+ headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:31:52 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
+ body=[{"id":1,"title":"Book 1","description":"Et praesent sit stet sea ea zzril stet eos dolor consequat dolores et rebum euismod sea iusto veniam. Et et no ut tempor. Velit amet sea duo option rebum et consequat ut stet sed lorem. Duo consetetur justo nonumy amet sadipscing vulputate voluptua vero mazim. Dolor rebum nonumy magna invidunt sit takimata sed sadipscing vero consectetuer takimata at tempor volutpat. Sadipscing tempor dolor vero amet blandit eirmod iusto et diam quis amet gubergren. Sed et et elit ipsum dolor est consequat justo rebum sed clita rebum et et. Sed facilisis nonumy et sed quis tempor in in erat amet lorem dolor no wisi ut sed. Amet consetetur sit labore elitr diam invidunt ut no commodo no elitr sea facer molestie voluptua velit. Dolor gubergren diam invidunt dolore ut dolore nonumy.\n","pageCount":100,"excerpt":"Tempor consetetur in diam consequat accumsan eos. Sed amet hendrerit. Eirmod no accumsan stet accumsan accusam duo consetetur sed luptatum lorem sadipscing ea et consequat. Lorem stet voluptua dolores kasd clita erat sed exerci erat consetetur et ipsum et gubergren tempor. Ipsum sit sit justo in et labore ipsum takimata lorem amet et. Zzril exerci vulputate sit et amet dolore vero sit lorem vero hendrerit takimata at gubergren dolor. Rebum est et magna. Accusam est vel invidunt. Dolor voluptua ex accusam accusam consetetur. Rebum nonumy liber duo aliquyam eirmod luptatum nibh dolore et. Sadipscing invidunt magna consectetuer dolor dolores ut est ut voluptua amet ut consequat ut tation.\nErat rebum facilisis. Eirmod no vulputate sanctus sit vero ea sit magna sit sit voluptua. Esse et justo ullamcorper eirmod nonumy nulla kasd eos elit adipiscing eirmod. Et nihil clita sit erat no aliquyam et est nibh nonumy sit.\nDuo et no lorem eirmod kasd nostrud. Commodo zzril gubergren elitr takimata diam gubergren minim et diam nonumy eirmod et voluptua diam velit diam illum amet. Sadipscing ea sed ea at dolor diam consetetur amet quis et ipsum invidunt dolore stet sit labore. Sadipscing dolor voluptua ipsum. Elit vero amet est dolor. Et lobortis ut ullamcorper voluptua. Lobortis augue labore sed blandit sed invidunt magna magna eum lorem ea magna amet lorem ipsum justo voluptua. Erat et ea eirmod minim et duo feugiat et. Gubergren accusam enim nam sit invidunt est eirmod justo nihil rebum eu sed aliquip nonumy molestie ipsum. Et ut ut sit labore lobortis. Ut kasd duis vel amet rebum ut dolore laoreet augue takimata ut augue ut lorem amet diam. Et ipsum sanctus duis ex dolor sed gubergren hendrerit. Iusto duo dolore vulputate eirmod eu tincidunt accusam at voluptua accusam ipsum stet in iriure.\nKasd option feugait. Magna est ea. Stet clita magna rebum ut consetetur suscipit duis duo ullamcorper eos nonumy eos esse takimata amet. Ad rebum laoreet ipsum clita et rebum praesent et amet consetetur amet et amet tation magna. Sanctus enim sanctus dolor eu ut sed rebum delenit et et lorem dolor. Eirmod in te elitr no consequat lorem blandit nisl justo enim nonumy sit ut amet dolores autem ut erat. Elit et ipsum eirmod stet dolore et et iriure. Consetetur et dolores amet takimata et nisl diam sed sed. Elitr ut sanctus ipsum invidunt stet eu congue commodo et kasd sed dolores facilisi facilisis ea ut lorem. Placerat dolor feugiat diam laoreet et sed ea vero et dolore sanctus vero. Sed adipiscing sed aliquyam illum et diam mazim sit eleifend ea. Iriure duo iriure ut vero voluptua takimata diam ut iriure gubergren consetetur et sit. Feugiat rebum duo aliquyam sadipscing gubergren et sed lorem et dolores takimata. Aliquyam no est. No dolor dolores kasd voluptua consectetuer blandit in takimata ipsum ipsum lorem placerat nulla. Eros accusam magna amet amet est consetetur accusam kasd eros velit erat tempor et ut facilisi.\nNonumy delenit eirmod aliquyam duis eirmod dolor hendrerit laoreet lorem aliquam sit et elit qui eirmod eirmod sit minim. In nonummy diam est. Ut duo gubergren et accusam elitr imperdiet kasd. Ipsum rebum gubergren dolore voluptua at diam sea ut diam kasd et. Et voluptua dolore magna elit hendrerit stet. Stet nonumy ea nonumy labore clita elit ut et nisl nihil stet magna lorem elitr at sit eirmod elitr. Suscipit imperdiet erat consetetur. Dolor sed erat nostrud dolore lorem. Invidunt veniam et et voluptua duis vel. Aliquyam duo at wisi autem. Dolore sanctus diam dolor no facilisis ut ut feugait dolores sed labore eirmod no sit dolore. Vel erat takimata dolores eos sea et eirmod. Iusto amet facilisi ad in dolore veniam accusam odio sit sed facilisi ut nulla consectetuer ad. Erat est ut erat no consequat diam erat diam rebum exerci euismod.\n","publishDate":"2022-12-15T11:31:53.0394495+00:00"},{"id":2,"title":"Book 2","description":"Takimata commodo possim dolor labore invidunt iriure elitr gubergren magna. Est aliquip sadipscing sit et dolor eirmod diam commodo. Accusam dolor ea illum exerci. Eos elit delenit justo at sit. Sed eirmod amet takimata eros ipsum eos eu eum no takimata vel sit labore. Lorem diam enim eirmod augue magna dolore labore ut justo molestie diam eirmod ad no. Sed sit at eros no eum sea duo. Ut ipsum duo et facilisis rebum amet sed consequat sed vero diam et elitr sit lobortis dolores zzril. Quod eos zzril dolores nonummy feugiat. Kasd nostrud sed stet augue aliquyam gubergren invidunt dolor labore nam sea sit dolor sanctus erat dolor.\n","pageCount":200,"excerpt":"Sanctus et labore id luptatum et autem. Facilisis voluptua labore ut amet amet facilisis sadipscing diam voluptua elit consetetur duis exerci dolor. Et sed nostrud ut assum eos sed invidunt vero diam. Facilisis invidunt ea rebum nibh et no dolore sit ea ea. Labore ea sed congue ut invidunt nisl aliquyam ut duis sanctus ipsum dolore gubergren sit.\nTe dolor sanctus diam kasd diam sea tation augue dolores nonumy kasd sadipscing et. Erat lorem ipsum lorem dolore vel duo vero dolore. Aliquyam nostrud dolor est est. Amet aliquyam sed dolor ut et suscipit et takimata.\nSanctus nulla sanctus at sanctus justo in tation. Vel iriure euismod diam sed amet sadipscing ipsum sanctus justo ipsum. Sea dolor eu erat et et eirmod ea gubergren assum ipsum eirmod. Clita vero adipiscing est iusto veniam amet duo labore. Te dolor amet sea dolore consetetur voluptua accusam consectetuer ad ut gubergren consetetur eos takimata odio. Sit at elitr et stet justo. Vero magna doming facilisis et at rebum euismod. Labore consectetuer no erat sit at amet et ea accusam. Justo justo lorem dolor erat dolor rebum ipsum no accumsan gubergren illum consetetur sed. Gubergren dolore sanctus magna dolore ipsum sed magna commodo vero autem. Sanctus clita labore. Stet dolor invidunt ex et autem dolor justo eros amet diam in facilisi sed. At magna illum eos consectetuer et diam vero magna erat diam. Stet tempor duis consequat sadipscing labore feugait et dolore erat sanctus. Consequat sit ut ut clita esse sed lorem clita consequat autem labore. Molestie iusto elitr suscipit et vel.\nVolutpat nonummy erat diam amet aliquam erat ea dolor nonumy accusam facilisi kasd takimata dolor sed magna dolore. Diam hendrerit nonumy takimata sea tempor esse lorem diam invidunt wisi. Labore sed dolor labore sit. Te et voluptua et consetetur elitr aliquyam dolores ipsum duo facilisis nonumy stet duo et. Augue wisi congue suscipit erat erat et tempor clita et sed nulla et.\nDiam nihil vel molestie. Rebum veniam sed. Dolore sit kasd sanctus diam vel sed iusto. Invidunt enim takimata. Eirmod esse vel takimata sadipscing tempor amet dolore cum nisl sit dolore minim invidunt ipsum. Dolore magna sed dolore sed rebum quis nulla eirmod accumsan ut et invidunt clita sit aliquyam eu. Dolores vulputate luptatum dolore vel sit lorem te sadipscing lorem invidunt justo ea vel sed sanctus. Eirmod eos invidunt feugiat nisl molestie elit. Labore et no dolores assum dolores luptatum. Ea ipsum vero accusam magna. Est ut clita nonumy sea et vulputate et vero. Dolore sit ipsum est kasd lorem accusam ipsum ad nonumy at accumsan sed est diam stet invidunt. Duo ipsum at consetetur duis. Sanctus hendrerit diam sed rebum liber in consetetur justo. Sed accusam ea eros gubergren eirmod amet molestie. Takimata blandit elitr commodo justo labore sed erat kasd dolore te imperdiet est eros dolores.\n","publishDate":"2022-12-14T11:31:53.0395087+00:00"},{"id":3,"title":"Book 3","description":"Sit tempor autem justo dignissim sed sit aliquyam sadipscing. Ex nulla nobis feugait est at magna ea aliquyam gubergren eos in invidunt nonummy vulputate. Aliquam ut amet sed kasd dolor ea consequat eos. Hendrerit vero sit feugiat erat et lorem duis takimata dolore dolore et ea sanctus sea eirmod sit at eos. Accumsan dolores eu et stet gubergren praesent clita invidunt dolor et no sanctus sea gubergren nulla iusto. Dolor consetetur eos hendrerit dolore takimata.\n","pageCount":300,"excerpt":"Elit ipsum et vero invidunt dolor nonumy consequat lorem ipsum aliquyam minim. Takimata eleifend ut. Dolor feugiat kasd luptatum aliquyam sed duo odio ipsum diam sadipscing consequat vel sadipscing sed. Et amet diam amet molestie nulla accusam diam illum kasd sed zzril consetetur est aliquam et sed ut tempor. Ipsum lorem accusam dolore no ipsum at iriure sadipscing sed kasd consequat delenit magna molestie justo amet consectetuer consetetur. Dolore ad voluptua est enim id aliquyam tempor.\nEos sit eos rebum volutpat feugait gubergren clita dolor vero lobortis tincidunt rebum assum accumsan. Diam et lorem sit vel iriure erat sed. Qui et velit sadipscing lorem sit duo dolor sanctus. Takimata sit erat. Ut hendrerit no clita labore tempor ut dolore et lorem clita assum sadipscing aliquyam aliquyam duo. Enim feugiat est tempor est suscipit no aliquam dolor. Stet voluptua et dolor vel lorem amet. Amet lorem tempor elitr vulputate quis sit accusam molestie magna vero. Facer molestie ipsum diam luptatum. Autem sed dolor justo no clita.\nEt in et et at dolor et dolore clita ut erat sit. Sed facilisi eirmod voluptua nam at dolore ex... (set the log level to DEBUG or TRACE to see the full content) 
  </msg>
-<msg timestamp="20221216 17:16:37.518" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221216 17:32:12.320" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221216 17:16:37.518" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:13.633" endtime="20221216 17:16:37.518"/>
+<msg timestamp="20221216 17:32:12.320" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:32:12.320"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:37.518" endtime="20221216 17:16:37.518"/>
+<status status="PASS" starttime="20221216 17:32:12.320" endtime="20221216 17:32:12.320"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:16:37.518" level="INFO">Argument types are:
+<msg timestamp="20221216 17:32:12.335" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:37.518" endtime="20221216 17:16:37.518"/>
+<status status="PASS" starttime="20221216 17:32:12.320" endtime="20221216 17:32:12.335"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:37.518" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
-<status status="PASS" starttime="20221216 17:16:37.518" endtime="20221216 17:16:37.518"/>
+<msg timestamp="20221216 17:32:12.335" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json; charset=utf-8; v=1.0</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:37.518" endtime="20221216 17:16:37.518"/>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
 </kw>
-<status status="PASS" starttime="20221216 17:16:13.633" endtime="20221216 17:16:37.518"/>
+<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:32:12.335"/>
 </test>
 <test id="s1-t2" name="TC2: Add a new book resource (POST)" line="24">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:16:37.533" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:16:37.533" endtime="20221216 17:16:37.533"/>
+<msg timestamp="20221216 17:32:12.335" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${body}</var>
-<arg>id=206</arg>
+<arg>id=200</arg>
 <arg>title=Robot Framework</arg>
 <arg>description=RestAPI Automation in python usibg robot framework</arg>
 <arg>pageCount=50</arg>
 <arg>excerpt=string</arg>
 <arg>publishDate=2022-12-16T05:43:22.937Z</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:16:37.533" level="INFO">${body} = {'id': '206', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
-<status status="PASS" starttime="20221216 17:16:37.533" endtime="20221216 17:16:37.533"/>
+<msg timestamp="20221216 17:32:12.335" level="INFO">${body} = {'id': '200', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${header}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:16:37.533" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20221216 17:16:37.533" endtime="20221216 17:16:37.533"/>
+<msg timestamp="20221216 17:32:12.335" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
 </kw>
 <kw name="Post Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -94,184 +94,184 @@
 <arg>data=${body}</arg>
 <arg>headers=${header}</arg>
 <doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
-<msg timestamp="20221216 17:16:37.533" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
-<msg timestamp="20221216 17:16:38.537" level="INFO">POST Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
+<msg timestamp="20221216 17:32:12.335" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20221216 17:32:13.337" level="INFO">POST Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
  path_url=/api/v1/Books 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '193'} 
- body={"id": "206", "title": "Robot Framework", "description": "RestAPI Automation in python usibg robot framework", "pageCount": "50", "excerpt": "string", "publishDate": "2022-12-16T05:43:22.937Z"} 
+ body={"id": "200", "title": "Robot Framework", "description": "RestAPI Automation in python usibg robot framework", "pageCount": "50", "excerpt": "string", "publishDate": "2022-12-16T05:43:22.937Z"} 
  </msg>
-<msg timestamp="20221216 17:16:38.537" level="INFO">POST Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
+<msg timestamp="20221216 17:32:13.337" level="INFO">POST Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:16:37 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body={"id":206,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"} 
+ headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:12 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
+ body={"id":200,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"} 
  </msg>
-<msg timestamp="20221216 17:16:38.537" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221216 17:32:13.337" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221216 17:16:38.546" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:37.533" endtime="20221216 17:16:38.546"/>
+<msg timestamp="20221216 17:32:13.337" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:13.337"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:38.546" endtime="20221216 17:16:38.546"/>
+<status status="PASS" starttime="20221216 17:32:13.337" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.headers}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:38.546" endtime="20221216 17:16:38.546"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:38.546" endtime="20221216 17:16:38.546"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:16:38.553" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<msg timestamp="20221216 17:32:13.353" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${server}</var>
 <arg>${response.headers}</arg>
 <arg>Server</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:38.553" level="INFO">${server} = Kestrel</msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<msg timestamp="20221216 17:32:13.353" level="INFO">${server} = Kestrel</msg>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${server}</arg>
 <arg>Kestrel</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${apiVersion}</var>
 <arg>${response.headers}</arg>
 <arg>api-supported-versions</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:38.553" level="INFO">${apiVersion} = 1.0</msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<msg timestamp="20221216 17:32:13.353" level="INFO">${apiVersion} = 1.0</msg>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${apiVersion}</arg>
 <arg>1.0</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${title}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:16:38.553" level="INFO">${title} = {"id":206,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<msg timestamp="20221216 17:32:13.353" level="INFO">${title} = {"id":200,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${title}</arg>
 <arg>Robot Framework</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
 <kw name="Should Not Contain" library="BuiltIn">
 <arg>${title}</arg>
 <arg>Robot Framework in py</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
 </kw>
-<status status="PASS" starttime="20221216 17:16:37.518" endtime="20221216 17:16:38.553"/>
+<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:13.353"/>
 </test>
 <test id="s1-t3" name="TC3: Returns a specific book along with details (GET)" line="48">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:16:38.553" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:38.553"/>
+<msg timestamp="20221216 17:32:13.368" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.368"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
 <arg>${relative_uli}/${param}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20221216 17:16:38.553" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:16:39.470" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
+<msg timestamp="20221216 17:32:13.368" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221216 17:32:15.138" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
  path_url=/api/v1/Books/2 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:16:39.470" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
+<msg timestamp="20221216 17:32:15.138" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:16:38 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body={"id":2,"title":"Book 2","description":"Lorem elitr ut. Dolores nisl lorem amet ipsum et ut suscipit justo takimata vero iriure minim. Ut dolore sit diam diam sed nostrud nonumy sed duo stet invidunt consetetur justo. Blandit et sadipscing invidunt sea ipsum ea stet sit accusam in justo at et. Dolor diam laoreet et dolor ipsum ut lorem consetetur voluptua aliquyam sit et aliquyam. Ea magna odio sed tincidunt diam tation et. Accumsan sed lorem et sed. Ea nonumy diam magna augue ex. Ipsum elit eirmod autem in ipsum et accusam in diam. Sea erat consetetur nisl erat takimata ipsum sed diam sadipscing ullamcorper vel et accusam ea est diam.\n","pageCount":200,"excerpt":"Est elitr dolor diam dolore magna est amet amet. Sadipscing consequat ullamcorper tempor nonumy luptatum takimata duo consetetur tempor duo lorem volutpat ea sea lorem suscipit consetetur duo. Et dolore et. Est ut et. Amet nonumy eos. Amet ut amet vero laoreet gubergren nobis autem aliquyam enim elitr. Consequat kasd ipsum erat takimata invidunt nonumy gubergren takimata suscipit hendrerit gubergren labore euismod. Sit ipsum est sea sed sea voluptua clita eirmod aliquyam vel stet facilisis duo ea. Kasd ut eum erat duis sadipscing kasd accusam ut sit dolores et consequat sanctus diam. Ut est minim est dolor accusam eos dolor luptatum nonummy dolor clita dolor est nonumy dolore erat. Est euismod veniam nibh et eu takimata facilisi amet suscipit aliquyam lobortis sea lorem takimata. Sanctus sadipscing at labore autem erat labore amet sed dolor. Consequat sit amet dolor diam sed doming dolor ipsum sed consequat facilisis sed velit amet.\nSed dolore et ea dolor stet feugait et erat vel ut sed duo sed feugiat no cum ea euismod. Gubergren sed elitr vel takimata nulla tempor duo rebum vero in dolor accusam blandit molestie zzril rebum. Tempor sadipscing clita sit dolor dolor diam aliquip rebum erat esse liber tation zzril magna kasd duo est. Lorem ipsum amet lorem praesent. Vel ipsum et elitr suscipit consequat. Dolor vel kasd amet stet vulputate consequat consequat rebum dolore elitr velit lorem. Sit consetetur illum. Dolores voluptua stet labore. No accumsan ipsum rebum consetetur praesent kasd diam erat nonummy praesent diam id nonumy. Gubergren eu veniam et est accusam takimata eirmod odio magna tation possim vulputate te ea nulla. Tempor lorem kasd vulputate nulla justo diam vel sadipscing consectetuer lorem ut kasd sit tempor tempor. Volutpat stet diam quod takimata ut duo voluptua est sit diam. Sit gubergren sadipscing eos magna kasd illum erat hendrerit lorem duis. Voluptua ea sadipscing dolores in ut dolor. Zzril voluptua adipiscing commodo erat et labore et tempor magna diam euismod. Sea suscipit dolor nonumy molestie tincidunt imperdiet ipsum at amet vulputate accusam eos stet aliquyam sed. Justo duo nulla dolor erat id dignissim. Luptatum clita mazim ullamcorper est no eos ipsum. Vulputate dolore invidunt.\nKasd sanctus sanctus lorem invidunt elitr elitr sea amet kasd. Iusto at sit. At zzril amet gubergren et esse assum lorem gubergren praesent blandit facilisis ipsum et. Labore eirmod dolor eirmod eos kasd justo sed takimata. Dolore ipsum amet et voluptua invidunt quis nonumy magna sanctus amet sea ipsum et. Est diam quod sit et diam et iusto ad et ut consetetur duis aliquam. At no at consequat facilisi molestie lorem sed consetetur gubergren dolor aliquip takimata. Nonumy et ut voluptua takimata commodo et et nisl molestie sanctus tempor eirmod duis dolore aliquip gubergren euismod sadipscing. Dolore elitr tincidunt et sit quis sit et nam. Erat zzril elit augue elitr. Dolor no est lorem. At vel nonumy clita sit vulputate vel stet delenit ipsum kasd in gubergren dolores labore. Invidunt et at nostrud diam et magna ipsum sadipscing ut diam eirmod dolor id sadipscing facer iriure. Ipsum sit clita delenit ipsum autem lorem sed eirmod et elit voluptua invidunt dignissim qui labore. Sanctus lorem clita cum vero. Ullamcorper amet amet duo nonumy.\nClita voluptua hendrerit diam kasd magna kasd. Voluptua in ipsum sanctus vero stet. Diam elit imperdiet clita dolor diam. Et labore consetetur diam.\nTakimata clita vel ipsum nisl. Amet dolore erat ad tempor no. Nulla erat in kasd dolore kasd duo vero voluptua lorem mazim in sea sit et sit. Clita et vero justo eos ipsum accusam erat aliquyam euismod hendrerit at lorem. Accusam dolore erat nibh amet dolor molestie labore autem gubergren erat diam. No erat exerci diam eos labore sadipscing sed invidunt elitr duis sanctus lorem. Illum et diam tempor sed invidunt nulla justo justo ea est esse. Dolor in commodo vero tempor justo qui sit sit duis lorem stet nonumy labore diam dolor accusam sed labore. Vero duis lorem consetetur dolor sed duo ipsum sadipscing sanctus et no et amet et diam. Erat labore sanctus lobortis tempor ut.\n","publishDate":"2022-12-14T11:16:39.1984481+00:00"} 
+ headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:14 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
+ body={"id":2,"title":"Book 2","description":"Stet et te ut sadipscing qui delenit diam. Rebum dolor eum duis diam tempor sed. Dolore invidunt consequat sit no te diam sed no esse lorem sit eos ipsum sed invidunt. Dolores consetetur molestie tempor gubergren eirmod sed duo ipsum augue nulla amet et. Diam vulputate diam suscipit lorem diam vel sit labore sit ut sed sanctus sanctus dolor iusto in augue sanctus. Vero et consequat consequat tempor dolor ipsum nonummy magna dolor ut tempor tempor dolor vero amet sea aliquyam justo. Dolor dolor voluptua magna elitr augue ut gubergren magna sed luptatum ipsum lorem. Sadipscing facer diam duis no et no nonummy diam lorem elitr dolore sit sea molestie placerat iriure vel.\n","pageCount":200,"excerpt":"Amet ea lorem nonummy est dolor dolor clita takimata. No dolore rebum gubergren ut kasd et ut ea. Sed sed amet eos et invidunt duo lorem kasd. Sit ea invidunt molestie ipsum erat et option takimata. Volutpat nonumy elitr et amet. Nonumy lorem sadipscing amet ipsum elitr duo tempor ut iriure eos amet. Eu voluptua sea duis dolores facilisis eirmod eu gubergren labore kasd amet. Ut sadipscing lorem accusam sed sed ea nonumy dolor ullamcorper praesent rebum at soluta amet. Voluptua ut erat consectetuer. Ipsum consequat ipsum wisi sed labore sed kasd stet et sadipscing sea doming sea kasd magna. Amet est ipsum et mazim. Aliquyam dolores est rebum consetetur velit ea. Sit quod eirmod diam odio sanctus eleifend invidunt ea vel et rebum sadipscing tation sea consetetur. Lorem dolores eirmod amet ea nibh eum dolore tempor esse eum diam elitr. Sea lorem nonumy consetetur nostrud facilisi stet amet. Erat aliquip et clita no. Wisi at nostrud dolor voluptua duo lorem et.\nBlandit gubergren lobortis accusam consetetur elitr sanctus magna. Elit eum labore vero gubergren justo magna lorem duis sed est. Velit nonumy sanctus accusam vero et lorem sea wisi sed erat. Ad gubergren iriure nibh. Eos diam sit sed tempor. Amet voluptua at voluptua duo dolores et nonumy adipiscing dignissim sit stet et duis eum diam amet vulputate. Dolore dignissim at dolores tempor lorem ullamcorper amet cum clita in sadipscing et sit nonumy ad dolores sadipscing aliquyam. Sed sed consetetur stet consectetuer gubergren nulla invidunt. Justo tempor dolor dolor exerci iriure nonummy iriure. Ex dolore est. No aliquyam amet et diam invidunt duo ea magna. Ex amet accusam sit tempor accumsan dolore diam eos. Vero nibh labore euismod quis eirmod justo lorem erat magna tation quod magna feugiat blandit et dolor no. Sea at et zzril sea magna eros magna et tempor delenit tincidunt. Clita ipsum autem at.\nDolor dolore sed stet eos justo. Volutpat magna enim aliquam vero laoreet invidunt ipsum aliquip sed et. Eos nonumy diam dolor sadipscing molestie diam sit sed wisi nonummy placerat ut vulputate in et sanctus dolore. Aliquyam sed rebum amet lorem facilisis sed velit et et et eum feugiat. Et est clita accusam commodo ipsum elitr justo. Nihil magna gubergren elit invidunt. Consetetur magna dolore sit et dolores rebum sea stet accusam clita ea facilisi. Nonumy est ipsum consequat amet amet elitr in molestie elitr nonummy kasd feugait et. Et vero vero eos et iusto lobortis lorem dolor. Tempor diam eum sit duis amet quis lorem. Molestie et dolor et eos clita ipsum diam gubergren est adipiscing ea ipsum quis erat sea voluptua consequat.\nNo et blandit et sanctus. In at diam ipsum ipsum ipsum justo wisi tempor sadipscing minim ea no nonumy clita consequat ullamcorper. Voluptua et nonumy stet dolore magna sed dolore invidunt kasd aliquyam at justo ut odio invidunt aliquyam accusam. Et elitr velit labore voluptua magna et magna amet. Sed vero eirmod erat laoreet sit et aliquyam sit nonumy consetetur et dolore et et et rebum et in. Aliquyam luptatum kasd magna. Est tempor veniam dolores aliquyam voluptua diam nonumy duo labore eos est amet.\nEuismod gubergren voluptua et nonumy lorem. Kasd vero aliquam ipsum elitr. Diam iriure esse et. Justo consequat praesent illum voluptua diam vel sit. Qui aliquyam stet dolore qui diam nonumy aliquyam gubergren eirmod sed illum dolores. Takimata voluptua dolore sit sit ea accumsan eirmod amet ea at dolore ipsum ut sanctus sadipscing gubergren gubergren. Accusam illum ea takimata lorem ea diam et ea consetetur no praesent diam diam ipsum nulla duo est vero. Stet clita lorem diam nonumy erat sadipscing takimata laoreet justo et consectetuer dignissim dolores clita suscipit. Consectetuer vel iriure est voluptua sanctus nonumy rebum magna odio dolor duis sit in ad stet et ea.\n","publishDate":"2022-12-14T11:32:14.8711702+00:00"} 
  </msg>
-<msg timestamp="20221216 17:16:39.470" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221216 17:32:15.138" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221216 17:16:39.470" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:39.470"/>
+<msg timestamp="20221216 17:32:15.138" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221216 17:32:13.368" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:39.470" endtime="20221216 17:16:39.470"/>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:39.470" endtime="20221216 17:16:39.470"/>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">Argument types are:
+<msg timestamp="20221216 17:32:15.138" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<msg timestamp="20221216 17:32:15.138" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json; charset=utf-8; v=1.0</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${title}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">${title} = {"id":2,"title":"Book 2","description":"Lorem elitr ut. Dolores nisl lorem amet ipsum et ut suscipit justo takimata vero iriure minim. Ut dolore sit diam diam sed nostrud nonumy sed duo stet invidunt ...</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<msg timestamp="20221216 17:32:15.138" level="INFO">${title} = {"id":2,"title":"Book 2","description":"Stet et te ut sadipscing qui delenit diam. Rebum dolor eum duis diam tempor sed. Dolore invidunt consequat sit no te diam sed no esse lorem sit eos ipsum sed in...</msg>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
 <kw name="Should Contain Any" library="BuiltIn">
 <arg>${title}</arg>
 <arg>Book 2</arg>
 <arg>2</arg>
 <doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
 </kw>
-<status status="PASS" starttime="20221216 17:16:38.553" endtime="20221216 17:16:39.486"/>
+<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:15.153"/>
 </test>
 <test id="s1-t4" name="TC4: Update a particular book info (PUT)" line="65">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<msg timestamp="20221216 17:32:15.153" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${body}</var>
@@ -282,15 +282,15 @@
 <arg>excerpt=string</arg>
 <arg>publishDate=2022-12-16T05:43:22.937Z</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">${body} = {'id': '2', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<msg timestamp="20221216 17:32:15.153" level="INFO">${body} = {'id': '2', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
+<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${header}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:16:39.486" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:39.486"/>
+<msg timestamp="20221216 17:32:15.153" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
 </kw>
 <kw name="Put Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -299,145 +299,145 @@
 <arg>data=${body}</arg>
 <arg>headers=${header}</arg>
 <doc>*DEPRECATED* Please use `PUT On Session` instead.</doc>
-<msg timestamp="20221216 17:16:39.486" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
-<msg timestamp="20221216 17:16:40.380" level="INFO">PUT Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
+<msg timestamp="20221216 17:32:15.153" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20221216 17:32:16.031" level="INFO">PUT Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
  path_url=/api/v1/Books/2 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '191'} 
  body={"id": "2", "title": "Robot Framework", "description": "RestAPI Automation in python usibg robot framework", "pageCount": "50", "excerpt": "string", "publishDate": "2022-12-16T05:43:22.937Z"} 
  </msg>
-<msg timestamp="20221216 17:16:40.380" level="INFO">PUT Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
+<msg timestamp="20221216 17:32:16.031" level="INFO">PUT Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:16:39 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
+ headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:14 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
  body={"id":2,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"} 
  </msg>
-<msg timestamp="20221216 17:16:40.380" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221216 17:32:16.031" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221216 17:16:40.380" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:40.380"/>
+<msg timestamp="20221216 17:32:16.031" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.headers}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:16:40.380" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<msg timestamp="20221216 17:32:16.031" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${transferEncoding}</var>
 <arg>${response.headers}</arg>
 <arg>Transfer-Encoding</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:40.380" level="INFO">${transferEncoding} = chunked</msg>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<msg timestamp="20221216 17:32:16.031" level="INFO">${transferEncoding} = chunked</msg>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${transferEncoding}</arg>
 <arg>chunked</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${apiVersion}</var>
 <arg>${response.headers}</arg>
 <arg>api-supported-versions</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:16:40.380" level="INFO">${apiVersion} = 1.0</msg>
-<status status="PASS" starttime="20221216 17:16:40.380" endtime="20221216 17:16:40.380"/>
+<msg timestamp="20221216 17:32:16.031" level="INFO">${apiVersion} = 1.0</msg>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${apiVersion}</arg>
 <arg>1.0</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:40.395"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${title}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:16:40.395" level="INFO">${title} = {"id":2,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:40.395"/>
+<msg timestamp="20221216 17:32:16.031" level="INFO">${title} = {"id":2,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${title}</arg>
 <arg>RestAPI Automation in python usibg robot framework</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:40.395"/>
+<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
 </kw>
 <kw name="Should Not Contain" library="BuiltIn">
 <arg>${title}</arg>
 <arg>Robot Framework in py</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:40.395"/>
+<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.047"/>
 </kw>
-<status status="PASS" starttime="20221216 17:16:39.486" endtime="20221216 17:16:40.395"/>
+<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:16.047"/>
 </test>
 <test id="s1-t5" name="TC5: Delete all info of a specific book (DELETE)" line="89">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:16:40.395" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:40.395"/>
+<msg timestamp="20221216 17:32:16.047" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.047"/>
 </kw>
 <kw name="Delete Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
 <arg>${relative_uli}/206</arg>
 <doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
-<msg timestamp="20221216 17:16:40.395" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
-<msg timestamp="20221216 17:16:41.260" level="INFO">DELETE Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
+<msg timestamp="20221216 17:32:16.047" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20221216 17:32:16.903" level="INFO">DELETE Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
  path_url=/api/v1/Books/206 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:16:41.260" level="INFO">DELETE Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
+<msg timestamp="20221216 17:32:16.903" level="INFO">DELETE Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
  status=200, reason=OK 
- headers={'Content-Length': '0', 'Date': 'Fri, 16 Dec 2022 11:16:40 GMT', 'Server': 'Kestrel', 'api-supported-versions': '1.0'} 
+ headers={'Content-Length': '0', 'Date': 'Fri, 16 Dec 2022 11:32:15 GMT', 'Server': 'Kestrel', 'api-supported-versions': '1.0'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:16:41.260" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221216 17:32:16.903" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221216 17:16:41.260" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:41.260"/>
+<msg timestamp="20221216 17:32:16.903" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.903"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:16:41.260" endtime="20221216 17:16:41.260"/>
+<status status="PASS" starttime="20221216 17:32:16.903" endtime="20221216 17:32:16.903"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:16:41.260" level="INFO">Argument types are:
+<msg timestamp="20221216 17:32:16.903" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:16:41.260" endtime="20221216 17:16:41.260"/>
+<status status="PASS" starttime="20221216 17:32:16.903" endtime="20221216 17:32:16.903"/>
 </kw>
-<status status="PASS" starttime="20221216 17:16:40.395" endtime="20221216 17:16:41.260"/>
+<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.903"/>
 </test>
-<status status="PASS" starttime="20221216 17:16:13.430" endtime="20221216 17:16:41.260"/>
+<status status="PASS" starttime="20221216 17:31:51.665" endtime="20221216 17:32:16.903"/>
 </suite>
 <statistics>
 <total>
@@ -450,10 +450,10 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221216 17:16:13.633" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:16:37.533" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
-<msg timestamp="20221216 17:16:38.553" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:16:39.486" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
-<msg timestamp="20221216 17:16:40.395" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20221216 17:31:51.951" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221216 17:32:12.335" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20221216 17:32:13.368" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221216 17:32:15.153" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20221216 17:32:16.047" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
 </errors>
 </robot>
