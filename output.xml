@@ -1,459 +1,657 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20221216 17:31:51.665" rpa="false" schemaversion="3">
-<suite id="s1" name="TC" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\TestCases\TC.robot">
-<test id="s1-t1" name="TC1: Return the list of all books along with description (GET)" line="13">
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20221222 15:40:32.501" rpa="false" schemaversion="3">
+<suite id="s1" name="RestAPIAutomation with RobotFramework" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework">
+<suite id="s1-s1" name="Video Game DB - Test Application" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\Video Game DB - Test Application">
+<suite id="s1-s1-s1" name="TestCases" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\Video Game DB - Test Application\TestCases">
+<suite id="s1-s1-s1-s1" name="VideoGameTC" source="J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\Video Game DB - Test Application\TestCases\VideoGameTC.robot">
+<test id="s1-s1-s1-s1-t1" name="TC1: Returns all the videos games in the DB (GET)" line="13">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:31:51.951" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:31:51.951"/>
+<msg timestamp="20221222 15:40:32.784" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221222 15:40:32.784" endtime="20221222 15:40:32.784"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
-<arg>${relative_uli}</arg>
+<arg>${relative_uri}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20221216 17:31:51.951" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:32:12.320" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
- path_url=/api/v1/Books 
+<msg timestamp="20221222 15:40:32.784" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221222 15:40:33.748" level="INFO">GET Request : url=http://localhost:8080/app/videogames 
+ path_url=/app/videogames 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:32:12.320" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
- status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:31:52 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body=[{"id":1,"title":"Book 1","description":"Et praesent sit stet sea ea zzril stet eos dolor consequat dolores et rebum euismod sea iusto veniam. Et et no ut tempor. Velit amet sea duo option rebum et consequat ut stet sed lorem. Duo consetetur justo nonumy amet sadipscing vulputate voluptua vero mazim. Dolor rebum nonumy magna invidunt sit takimata sed sadipscing vero consectetuer takimata at tempor volutpat. Sadipscing tempor dolor vero amet blandit eirmod iusto et diam quis amet gubergren. Sed et et elit ipsum dolor est consequat justo rebum sed clita rebum et et. Sed facilisis nonumy et sed quis tempor in in erat amet lorem dolor no wisi ut sed. Amet consetetur sit labore elitr diam invidunt ut no commodo no elitr sea facer molestie voluptua velit. Dolor gubergren diam invidunt dolore ut dolore nonumy.\n","pageCount":100,"excerpt":"Tempor consetetur in diam consequat accumsan eos. Sed amet hendrerit. Eirmod no accumsan stet accumsan accusam duo consetetur sed luptatum lorem sadipscing ea et consequat. Lorem stet voluptua dolores kasd clita erat sed exerci erat consetetur et ipsum et gubergren tempor. Ipsum sit sit justo in et labore ipsum takimata lorem amet et. Zzril exerci vulputate sit et amet dolore vero sit lorem vero hendrerit takimata at gubergren dolor. Rebum est et magna. Accusam est vel invidunt. Dolor voluptua ex accusam accusam consetetur. Rebum nonumy liber duo aliquyam eirmod luptatum nibh dolore et. Sadipscing invidunt magna consectetuer dolor dolores ut est ut voluptua amet ut consequat ut tation.\nErat rebum facilisis. Eirmod no vulputate sanctus sit vero ea sit magna sit sit voluptua. Esse et justo ullamcorper eirmod nonumy nulla kasd eos elit adipiscing eirmod. Et nihil clita sit erat no aliquyam et est nibh nonumy sit.\nDuo et no lorem eirmod kasd nostrud. Commodo zzril gubergren elitr takimata diam gubergren minim et diam nonumy eirmod et voluptua diam velit diam illum amet. Sadipscing ea sed ea at dolor diam consetetur amet quis et ipsum invidunt dolore stet sit labore. Sadipscing dolor voluptua ipsum. Elit vero amet est dolor. Et lobortis ut ullamcorper voluptua. Lobortis augue labore sed blandit sed invidunt magna magna eum lorem ea magna amet lorem ipsum justo voluptua. Erat et ea eirmod minim et duo feugiat et. Gubergren accusam enim nam sit invidunt est eirmod justo nihil rebum eu sed aliquip nonumy molestie ipsum. Et ut ut sit labore lobortis. Ut kasd duis vel amet rebum ut dolore laoreet augue takimata ut augue ut lorem amet diam. Et ipsum sanctus duis ex dolor sed gubergren hendrerit. Iusto duo dolore vulputate eirmod eu tincidunt accusam at voluptua accusam ipsum stet in iriure.\nKasd option feugait. Magna est ea. Stet clita magna rebum ut consetetur suscipit duis duo ullamcorper eos nonumy eos esse takimata amet. Ad rebum laoreet ipsum clita et rebum praesent et amet consetetur amet et amet tation magna. Sanctus enim sanctus dolor eu ut sed rebum delenit et et lorem dolor. Eirmod in te elitr no consequat lorem blandit nisl justo enim nonumy sit ut amet dolores autem ut erat. Elit et ipsum eirmod stet dolore et et iriure. Consetetur et dolores amet takimata et nisl diam sed sed. Elitr ut sanctus ipsum invidunt stet eu congue commodo et kasd sed dolores facilisi facilisis ea ut lorem. Placerat dolor feugiat diam laoreet et sed ea vero et dolore sanctus vero. Sed adipiscing sed aliquyam illum et diam mazim sit eleifend ea. Iriure duo iriure ut vero voluptua takimata diam ut iriure gubergren consetetur et sit. Feugiat rebum duo aliquyam sadipscing gubergren et sed lorem et dolores takimata. Aliquyam no est. No dolor dolores kasd voluptua consectetuer blandit in takimata ipsum ipsum lorem placerat nulla. Eros accusam magna amet amet est consetetur accusam kasd eros velit erat tempor et ut facilisi.\nNonumy delenit eirmod aliquyam duis eirmod dolor hendrerit laoreet lorem aliquam sit et elit qui eirmod eirmod sit minim. In nonummy diam est. Ut duo gubergren et accusam elitr imperdiet kasd. Ipsum rebum gubergren dolore voluptua at diam sea ut diam kasd et. Et voluptua dolore magna elit hendrerit stet. Stet nonumy ea nonumy labore clita elit ut et nisl nihil stet magna lorem elitr at sit eirmod elitr. Suscipit imperdiet erat consetetur. Dolor sed erat nostrud dolore lorem. Invidunt veniam et et voluptua duis vel. Aliquyam duo at wisi autem. Dolore sanctus diam dolor no facilisis ut ut feugait dolores sed labore eirmod no sit dolore. Vel erat takimata dolores eos sea et eirmod. Iusto amet facilisi ad in dolore veniam accusam odio sit sed facilisi ut nulla consectetuer ad. Erat est ut erat no consequat diam erat diam rebum exerci euismod.\n","publishDate":"2022-12-15T11:31:53.0394495+00:00"},{"id":2,"title":"Book 2","description":"Takimata commodo possim dolor labore invidunt iriure elitr gubergren magna. Est aliquip sadipscing sit et dolor eirmod diam commodo. Accusam dolor ea illum exerci. Eos elit delenit justo at sit. Sed eirmod amet takimata eros ipsum eos eu eum no takimata vel sit labore. Lorem diam enim eirmod augue magna dolore labore ut justo molestie diam eirmod ad no. Sed sit at eros no eum sea duo. Ut ipsum duo et facilisis rebum amet sed consequat sed vero diam et elitr sit lobortis dolores zzril. Quod eos zzril dolores nonummy feugiat. Kasd nostrud sed stet augue aliquyam gubergren invidunt dolor labore nam sea sit dolor sanctus erat dolor.\n","pageCount":200,"excerpt":"Sanctus et labore id luptatum et autem. Facilisis voluptua labore ut amet amet facilisis sadipscing diam voluptua elit consetetur duis exerci dolor. Et sed nostrud ut assum eos sed invidunt vero diam. Facilisis invidunt ea rebum nibh et no dolore sit ea ea. Labore ea sed congue ut invidunt nisl aliquyam ut duis sanctus ipsum dolore gubergren sit.\nTe dolor sanctus diam kasd diam sea tation augue dolores nonumy kasd sadipscing et. Erat lorem ipsum lorem dolore vel duo vero dolore. Aliquyam nostrud dolor est est. Amet aliquyam sed dolor ut et suscipit et takimata.\nSanctus nulla sanctus at sanctus justo in tation. Vel iriure euismod diam sed amet sadipscing ipsum sanctus justo ipsum. Sea dolor eu erat et et eirmod ea gubergren assum ipsum eirmod. Clita vero adipiscing est iusto veniam amet duo labore. Te dolor amet sea dolore consetetur voluptua accusam consectetuer ad ut gubergren consetetur eos takimata odio. Sit at elitr et stet justo. Vero magna doming facilisis et at rebum euismod. Labore consectetuer no erat sit at amet et ea accusam. Justo justo lorem dolor erat dolor rebum ipsum no accumsan gubergren illum consetetur sed. Gubergren dolore sanctus magna dolore ipsum sed magna commodo vero autem. Sanctus clita labore. Stet dolor invidunt ex et autem dolor justo eros amet diam in facilisi sed. At magna illum eos consectetuer et diam vero magna erat diam. Stet tempor duis consequat sadipscing labore feugait et dolore erat sanctus. Consequat sit ut ut clita esse sed lorem clita consequat autem labore. Molestie iusto elitr suscipit et vel.\nVolutpat nonummy erat diam amet aliquam erat ea dolor nonumy accusam facilisi kasd takimata dolor sed magna dolore. Diam hendrerit nonumy takimata sea tempor esse lorem diam invidunt wisi. Labore sed dolor labore sit. Te et voluptua et consetetur elitr aliquyam dolores ipsum duo facilisis nonumy stet duo et. Augue wisi congue suscipit erat erat et tempor clita et sed nulla et.\nDiam nihil vel molestie. Rebum veniam sed. Dolore sit kasd sanctus diam vel sed iusto. Invidunt enim takimata. Eirmod esse vel takimata sadipscing tempor amet dolore cum nisl sit dolore minim invidunt ipsum. Dolore magna sed dolore sed rebum quis nulla eirmod accumsan ut et invidunt clita sit aliquyam eu. Dolores vulputate luptatum dolore vel sit lorem te sadipscing lorem invidunt justo ea vel sed sanctus. Eirmod eos invidunt feugiat nisl molestie elit. Labore et no dolores assum dolores luptatum. Ea ipsum vero accusam magna. Est ut clita nonumy sea et vulputate et vero. Dolore sit ipsum est kasd lorem accusam ipsum ad nonumy at accumsan sed est diam stet invidunt. Duo ipsum at consetetur duis. Sanctus hendrerit diam sed rebum liber in consetetur justo. Sed accusam ea eros gubergren eirmod amet molestie. Takimata blandit elitr commodo justo labore sed erat kasd dolore te imperdiet est eros dolores.\n","publishDate":"2022-12-14T11:31:53.0395087+00:00"},{"id":3,"title":"Book 3","description":"Sit tempor autem justo dignissim sed sit aliquyam sadipscing. Ex nulla nobis feugait est at magna ea aliquyam gubergren eos in invidunt nonummy vulputate. Aliquam ut amet sed kasd dolor ea consequat eos. Hendrerit vero sit feugiat erat et lorem duis takimata dolore dolore et ea sanctus sea eirmod sit at eos. Accumsan dolores eu et stet gubergren praesent clita invidunt dolor et no sanctus sea gubergren nulla iusto. Dolor consetetur eos hendrerit dolore takimata.\n","pageCount":300,"excerpt":"Elit ipsum et vero invidunt dolor nonumy consequat lorem ipsum aliquyam minim. Takimata eleifend ut. Dolor feugiat kasd luptatum aliquyam sed duo odio ipsum diam sadipscing consequat vel sadipscing sed. Et amet diam amet molestie nulla accusam diam illum kasd sed zzril consetetur est aliquam et sed ut tempor. Ipsum lorem accusam dolore no ipsum at iriure sadipscing sed kasd consequat delenit magna molestie justo amet consectetuer consetetur. Dolore ad voluptua est enim id aliquyam tempor.\nEos sit eos rebum volutpat feugait gubergren clita dolor vero lobortis tincidunt rebum assum accumsan. Diam et lorem sit vel iriure erat sed. Qui et velit sadipscing lorem sit duo dolor sanctus. Takimata sit erat. Ut hendrerit no clita labore tempor ut dolore et lorem clita assum sadipscing aliquyam aliquyam duo. Enim feugiat est tempor est suscipit no aliquam dolor. Stet voluptua et dolor vel lorem amet. Amet lorem tempor elitr vulputate quis sit accusam molestie magna vero. Facer molestie ipsum diam luptatum. Autem sed dolor justo no clita.\nEt in et et at dolor et dolore clita ut erat sit. Sed facilisi eirmod voluptua nam at dolore ex... (set the log level to DEBUG or TRACE to see the full content) 
+<msg timestamp="20221222 15:40:33.748" level="INFO">GET Response : url=http://localhost:8080/app/videogames 
+ status=500, reason= 
+ headers={'Content-Type': 'application/xml;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 22 Dec 2022 09:40:33 GMT', 'Connection': 'close'} 
+ body=&lt;Map&gt;&lt;timestamp&gt;1671702033588&lt;/timestamp&gt;&lt;status&gt;500&lt;/status&gt;&lt;error&gt;Internal Server Error&lt;/error&gt;&lt;message&gt;Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&lt;/message&gt;&lt;trace&gt;java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:311)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:97)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:87)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.&amp;lt;init&gt;(TransducedAccessor.java:235)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor.get(TransducedAccessor.java:175)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.AttributeProperty.&amp;lt;init&gt;(AttributeProperty.java:91)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:108)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.&amp;lt;init&gt;(ClassBeanInfoImpl.java:181)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:331)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:139)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)&amp;#xd;
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)&amp;#xd;
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)&amp;#xd;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&amp;#xd;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286)&amp;#xd;
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getStoredJaxbContext(AbstractJaxbProvider.java:312)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getJAXBContext(AbstractJaxbProvider.java:297)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:264)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:231)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractCollectionJaxbProvider.writeTo(AbstractCollectionJaxbProvider.java:267)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:266)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:251)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:109)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:85)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1135)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:662)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:395)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:385)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:280)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)&amp;#xd;
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)&amp;#xd;
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:409)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:584)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:525)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:462)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)&amp;#xd;
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)&amp;#xd;
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)&amp;#xd;
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)&amp;#xd;
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)&amp;#xd;
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)&amp;#xd;
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)&amp;#xd;
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)&amp;#xd;
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)&amp;#xd;
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)&amp;#xd;
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)&amp;#xd;
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)&amp;#xd;
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)&amp;#xd;
+	at java.base/java.lang.Thread.run(Thread.java:833)&amp;#xd;
+&lt;/trace&gt;&lt;path&gt;/app/videogames&lt;/path&gt;&lt;/Map&gt; 
  </msg>
-<msg timestamp="20221216 17:32:12.320" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221216 17:32:12.320" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:32:12.320"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:12.320" endtime="20221216 17:32:12.320"/>
+<msg timestamp="20221222 15:40:33.748" level="INFO">${response} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20221222 15:40:32.784" endtime="20221222 15:40:33.748"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:32:12.335" level="INFO">Argument types are:
+<msg timestamp="20221222 15:40:33.748" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:12.320" endtime="20221216 17:32:12.335"/>
+<msg timestamp="20221222 15:40:33.748" level="FAIL">500 != 200</msg>
+<status status="FAIL" starttime="20221222 15:40:33.748" endtime="20221222 15:40:33.748"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
-<var>${contentTypeValue}</var>
+<var>${contentType}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:12.335" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
+<status status="NOT RUN" starttime="20221222 15:40:33.748" endtime="20221222 15:40:33.748"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${contentType}</arg>
+<arg>application/xml;charset=UTF-8</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.761"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${contentTypeValue}</arg>
-<arg>application/json; charset=utf-8; v=1.0</arg>
+<arg>${contentType}</arg>
+<arg>application/xml;charset=UTF-8</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
+<status status="NOT RUN" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.761"/>
 </kw>
-<status status="PASS" starttime="20221216 17:31:51.951" endtime="20221216 17:32:12.335"/>
+<status status="FAIL" starttime="20221222 15:40:32.784" endtime="20221222 15:40:33.761">500 != 200</status>
 </test>
-<test id="s1-t2" name="TC2: Add a new book resource (POST)" line="24">
+<test id="s1-s1-s1-s1-t2" name="TC2: Add a new video game to the DB (POST)" line="27">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:32:12.335" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
+<msg timestamp="20221222 15:40:33.761" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.761"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${body}</var>
-<arg>id=200</arg>
-<arg>title=Robot Framework</arg>
-<arg>description=RestAPI Automation in python usibg robot framework</arg>
-<arg>pageCount=50</arg>
-<arg>excerpt=string</arg>
-<arg>publishDate=2022-12-16T05:43:22.937Z</arg>
+<arg>id=${param}</arg>
+<arg>name=Faysal</arg>
+<arg>releaseDate=2022-12-22T07:35:37.466Z</arg>
+<arg>reviewScore=100</arg>
+<arg>category=Action</arg>
+<arg>rating=*****</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:32:12.335" level="INFO">${body} = {'id': '200', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
+<msg timestamp="20221222 15:40:33.761" level="INFO">${body} = {'id': '201', 'name': 'Faysal', 'releaseDate': '2022-12-22T07:35:37.466Z', 'reviewScore': '100', 'category': 'Action', 'rating': '*****'}</msg>
+<status status="PASS" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.761"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
-<var>${header}</var>
+<var>${contentType}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:32:12.335" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:12.335"/>
+<msg timestamp="20221222 15:40:33.761" level="INFO">${contentType} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.761"/>
 </kw>
 <kw name="Post Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
-<arg>${relative_uli}</arg>
+<arg>${relative_uri}</arg>
 <arg>data=${body}</arg>
-<arg>headers=${header}</arg>
+<arg>headers=${contentType}</arg>
 <doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
-<msg timestamp="20221216 17:32:12.335" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
-<msg timestamp="20221216 17:32:13.337" level="INFO">POST Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
- path_url=/api/v1/Books 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '193'} 
- body={"id": "200", "title": "Robot Framework", "description": "RestAPI Automation in python usibg robot framework", "pageCount": "50", "excerpt": "string", "publishDate": "2022-12-16T05:43:22.937Z"} 
+<msg timestamp="20221222 15:40:33.761" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20221222 15:40:33.856" level="INFO">POST Request : url=http://localhost:8080/app/videogames 
+ path_url=/app/videogames 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '137'} 
+ body={"id": "201", "name": "Faysal", "releaseDate": "2022-12-22T07:35:37.466Z", "reviewScore": "100", "category": "Action", "rating": "*****"} 
  </msg>
-<msg timestamp="20221216 17:32:13.337" level="INFO">POST Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books 
- status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:12 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body={"id":200,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"} 
+<msg timestamp="20221222 15:40:33.878" level="INFO">POST Response : url=http://localhost:8080/app/videogames 
+ status=200, reason= 
+ headers={'Content-Type': 'application/xml', 'Content-Length': '39', 'Date': 'Thu, 22 Dec 2022 09:40:33 GMT'} 
+ body={"status": "Record Added Successfully"} 
  </msg>
-<msg timestamp="20221216 17:32:13.337" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221216 17:32:13.337" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:13.337"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:13.337" endtime="20221216 17:32:13.353"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.headers}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.content}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<msg timestamp="20221222 15:40:33.878" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.878"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:32:13.353" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<msg timestamp="20221222 15:40:33.879" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20221222 15:40:33.878" endtime="20221222 15:40:33.879"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<status status="PASS" starttime="20221222 15:40:33.879" endtime="20221222 15:40:33.880"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
-<var>${server}</var>
+<var>${contentType}</var>
 <arg>${response.headers}</arg>
-<arg>Server</arg>
+<arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:13.353" level="INFO">${server} = Kestrel</msg>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<msg timestamp="20221222 15:40:33.880" level="INFO">${contentType} = application/xml</msg>
+<status status="PASS" starttime="20221222 15:40:33.880" endtime="20221222 15:40:33.880"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${server}</arg>
-<arg>Kestrel</arg>
+<arg>${contentType}</arg>
+<arg>application/xml</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${apiVersion}</var>
-<arg>${response.headers}</arg>
-<arg>api-supported-versions</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:13.353" level="INFO">${apiVersion} = 1.0</msg>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
-</kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${apiVersion}</arg>
-<arg>1.0</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<status status="PASS" starttime="20221222 15:40:33.881" endtime="20221222 15:40:33.881"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
-<var>${title}</var>
+<var>${status}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:32:13.353" level="INFO">${title} = {"id":200,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<msg timestamp="20221222 15:40:33.882" level="INFO">${status} = {"status": "Record Added Successfully"}</msg>
+<status status="PASS" starttime="20221222 15:40:33.881" endtime="20221222 15:40:33.882"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
-<arg>${title}</arg>
-<arg>Robot Framework</arg>
+<arg>${status}</arg>
+<arg>Record Added Successfully</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
+<status status="PASS" starttime="20221222 15:40:33.882" endtime="20221222 15:40:33.882"/>
 </kw>
-<kw name="Should Not Contain" library="BuiltIn">
-<arg>${title}</arg>
-<arg>Robot Framework in py</arg>
-<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.353"/>
-</kw>
-<status status="PASS" starttime="20221216 17:32:12.335" endtime="20221216 17:32:13.353"/>
+<status status="PASS" starttime="20221222 15:40:33.761" endtime="20221222 15:40:33.882"/>
 </test>
-<test id="s1-t3" name="TC3: Returns a specific book along with details (GET)" line="48">
+<test id="s1-s1-s1-s1-t3" name="TC3: Returns the details of a single game by ID (GET)" line="44">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:32:13.368" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:13.368"/>
+<msg timestamp="20221222 15:40:33.882" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221222 15:40:33.882" endtime="20221222 15:40:33.882"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
-<arg>${relative_uli}/${param}</arg>
+<arg>${relative_uri}/${param}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20221216 17:32:13.368" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:32:15.138" level="INFO">GET Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
- path_url=/api/v1/Books/2 
+<msg timestamp="20221222 15:40:33.882" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221222 15:40:34.833" level="INFO">GET Request : url=http://localhost:8080/app/videogames/201 
+ path_url=/app/videogames/201 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:32:15.138" level="INFO">GET Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
- status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:14 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body={"id":2,"title":"Book 2","description":"Stet et te ut sadipscing qui delenit diam. Rebum dolor eum duis diam tempor sed. Dolore invidunt consequat sit no te diam sed no esse lorem sit eos ipsum sed invidunt. Dolores consetetur molestie tempor gubergren eirmod sed duo ipsum augue nulla amet et. Diam vulputate diam suscipit lorem diam vel sit labore sit ut sed sanctus sanctus dolor iusto in augue sanctus. Vero et consequat consequat tempor dolor ipsum nonummy magna dolor ut tempor tempor dolor vero amet sea aliquyam justo. Dolor dolor voluptua magna elitr augue ut gubergren magna sed luptatum ipsum lorem. Sadipscing facer diam duis no et no nonummy diam lorem elitr dolore sit sea molestie placerat iriure vel.\n","pageCount":200,"excerpt":"Amet ea lorem nonummy est dolor dolor clita takimata. No dolore rebum gubergren ut kasd et ut ea. Sed sed amet eos et invidunt duo lorem kasd. Sit ea invidunt molestie ipsum erat et option takimata. Volutpat nonumy elitr et amet. Nonumy lorem sadipscing amet ipsum elitr duo tempor ut iriure eos amet. Eu voluptua sea duis dolores facilisis eirmod eu gubergren labore kasd amet. Ut sadipscing lorem accusam sed sed ea nonumy dolor ullamcorper praesent rebum at soluta amet. Voluptua ut erat consectetuer. Ipsum consequat ipsum wisi sed labore sed kasd stet et sadipscing sea doming sea kasd magna. Amet est ipsum et mazim. Aliquyam dolores est rebum consetetur velit ea. Sit quod eirmod diam odio sanctus eleifend invidunt ea vel et rebum sadipscing tation sea consetetur. Lorem dolores eirmod amet ea nibh eum dolore tempor esse eum diam elitr. Sea lorem nonumy consetetur nostrud facilisi stet amet. Erat aliquip et clita no. Wisi at nostrud dolor voluptua duo lorem et.\nBlandit gubergren lobortis accusam consetetur elitr sanctus magna. Elit eum labore vero gubergren justo magna lorem duis sed est. Velit nonumy sanctus accusam vero et lorem sea wisi sed erat. Ad gubergren iriure nibh. Eos diam sit sed tempor. Amet voluptua at voluptua duo dolores et nonumy adipiscing dignissim sit stet et duis eum diam amet vulputate. Dolore dignissim at dolores tempor lorem ullamcorper amet cum clita in sadipscing et sit nonumy ad dolores sadipscing aliquyam. Sed sed consetetur stet consectetuer gubergren nulla invidunt. Justo tempor dolor dolor exerci iriure nonummy iriure. Ex dolore est. No aliquyam amet et diam invidunt duo ea magna. Ex amet accusam sit tempor accumsan dolore diam eos. Vero nibh labore euismod quis eirmod justo lorem erat magna tation quod magna feugiat blandit et dolor no. Sea at et zzril sea magna eros magna et tempor delenit tincidunt. Clita ipsum autem at.\nDolor dolore sed stet eos justo. Volutpat magna enim aliquam vero laoreet invidunt ipsum aliquip sed et. Eos nonumy diam dolor sadipscing molestie diam sit sed wisi nonummy placerat ut vulputate in et sanctus dolore. Aliquyam sed rebum amet lorem facilisis sed velit et et et eum feugiat. Et est clita accusam commodo ipsum elitr justo. Nihil magna gubergren elit invidunt. Consetetur magna dolore sit et dolores rebum sea stet accusam clita ea facilisi. Nonumy est ipsum consequat amet amet elitr in molestie elitr nonummy kasd feugait et. Et vero vero eos et iusto lobortis lorem dolor. Tempor diam eum sit duis amet quis lorem. Molestie et dolor et eos clita ipsum diam gubergren est adipiscing ea ipsum quis erat sea voluptua consequat.\nNo et blandit et sanctus. In at diam ipsum ipsum ipsum justo wisi tempor sadipscing minim ea no nonumy clita consequat ullamcorper. Voluptua et nonumy stet dolore magna sed dolore invidunt kasd aliquyam at justo ut odio invidunt aliquyam accusam. Et elitr velit labore voluptua magna et magna amet. Sed vero eirmod erat laoreet sit et aliquyam sit nonumy consetetur et dolore et et et rebum et in. Aliquyam luptatum kasd magna. Est tempor veniam dolores aliquyam voluptua diam nonumy duo labore eos est amet.\nEuismod gubergren voluptua et nonumy lorem. Kasd vero aliquam ipsum elitr. Diam iriure esse et. Justo consequat praesent illum voluptua diam vel sit. Qui aliquyam stet dolore qui diam nonumy aliquyam gubergren eirmod sed illum dolores. Takimata voluptua dolore sit sit ea accumsan eirmod amet ea at dolore ipsum ut sanctus sadipscing gubergren gubergren. Accusam illum ea takimata lorem ea diam et ea consetetur no praesent diam diam ipsum nulla duo est vero. Stet clita lorem diam nonumy erat sadipscing takimata laoreet justo et consectetuer dignissim dolores clita suscipit. Consectetuer vel iriure est voluptua sanctus nonumy rebum magna odio dolor duis sit in ad stet et ea.\n","publishDate":"2022-12-14T11:32:14.8711702+00:00"} 
+<msg timestamp="20221222 15:40:34.833" level="INFO">GET Response : url=http://localhost:8080/app/videogames/201 
+ status=500, reason= 
+ headers={'Content-Type': 'application/xml;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 22 Dec 2022 09:40:34 GMT', 'Connection': 'close'} 
+ body=&lt;Map&gt;&lt;timestamp&gt;1671702034785&lt;/timestamp&gt;&lt;status&gt;500&lt;/status&gt;&lt;error&gt;Internal Server Error&lt;/error&gt;&lt;message&gt;Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&lt;/message&gt;&lt;trace&gt;java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:311)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:97)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:87)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.&amp;lt;init&gt;(TransducedAccessor.java:235)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor.get(TransducedAccessor.java:175)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.AttributeProperty.&amp;lt;init&gt;(AttributeProperty.java:91)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:108)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.&amp;lt;init&gt;(ClassBeanInfoImpl.java:181)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:331)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:139)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)&amp;#xd;
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)&amp;#xd;
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)&amp;#xd;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&amp;#xd;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286)&amp;#xd;
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getStoredJaxbContext(AbstractJaxbProvider.java:312)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getJAXBContext(AbstractJaxbProvider.java:297)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:264)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:231)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractRootElementJaxbProvider.writeTo(AbstractRootElementJaxbProvider.java:175)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:266)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:251)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:109)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:85)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1135)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:662)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:395)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:385)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:280)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)&amp;#xd;
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)&amp;#xd;
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:409)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:584)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:525)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:462)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)&amp;#xd;
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)&amp;#xd;
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)&amp;#xd;
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)&amp;#xd;
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)&amp;#xd;
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)&amp;#xd;
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)&amp;#xd;
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)&amp;#xd;
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)&amp;#xd;
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)&amp;#xd;
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)&amp;#xd;
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)&amp;#xd;
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)&amp;#xd;
+	at java.base/java.lang.Thread.run(Thread.java:833)&amp;#xd;
+&lt;/trace&gt;&lt;path&gt;/app/videogames/201&lt;/path&gt;&lt;/Map&gt; 
  </msg>
-<msg timestamp="20221216 17:32:15.138" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221216 17:32:15.138" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:13.368" endtime="20221216 17:32:15.138"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.content}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
+<msg timestamp="20221222 15:40:34.833" level="INFO">${response} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20221222 15:40:33.882" endtime="20221222 15:40:34.833"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:32:15.138" level="INFO">Argument types are:
+<msg timestamp="20221222 15:40:34.848" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
+<msg timestamp="20221222 15:40:34.848" level="FAIL">500 != 200</msg>
+<status status="FAIL" starttime="20221222 15:40:34.833" endtime="20221222 15:40:34.848"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
-<var>${contentTypeValue}</var>
+<var>${contentType}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:15.138" level="INFO">${contentTypeValue} = application/json; charset=utf-8; v=1.0</msg>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
+<status status="NOT RUN" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${contentType}</arg>
+<arg>application/xml;charset=UTF-8</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${contentTypeValue}</arg>
-<arg>application/json; charset=utf-8; v=1.0</arg>
+<arg>${contentType}</arg>
+<arg>application/xml;charset=UTF-8</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
+<status status="NOT RUN" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
-<var>${title}</var>
-<arg>${response.content}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:32:15.138" level="INFO">${title} = {"id":2,"title":"Book 2","description":"Stet et te ut sadipscing qui delenit diam. Rebum dolor eum duis diam tempor sed. Dolore invidunt consequat sit no te diam sed no esse lorem sit eos ipsum sed in...</msg>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
-</kw>
-<kw name="Should Contain Any" library="BuiltIn">
-<arg>${title}</arg>
-<arg>Book 2</arg>
-<arg>2</arg>
-<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
-<status status="PASS" starttime="20221216 17:32:15.138" endtime="20221216 17:32:15.138"/>
-</kw>
-<status status="PASS" starttime="20221216 17:32:13.353" endtime="20221216 17:32:15.153"/>
+<status status="FAIL" starttime="20221222 15:40:33.882" endtime="20221222 15:40:34.850">500 != 200</status>
 </test>
-<test id="s1-t4" name="TC4: Update a particular book info (PUT)" line="65">
+<test id="s1-s1-s1-s1-t4" name="TC4: Update an existing video game in the DB by specifying a new body (PUT)" line="57">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:32:15.153" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
+<msg timestamp="20221222 15:40:34.850" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${body}</var>
-<arg>id=2</arg>
-<arg>title=Robot Framework</arg>
-<arg>description=RestAPI Automation in python usibg robot framework</arg>
-<arg>pageCount=50</arg>
-<arg>excerpt=string</arg>
-<arg>publishDate=2022-12-16T05:43:22.937Z</arg>
+<arg>id=${param}</arg>
+<arg>name=Faysal Sarder</arg>
+<arg>releaseDate=2022-12-22T07:35:37.466Z</arg>
+<arg>reviewScore=100</arg>
+<arg>category=Action</arg>
+<arg>rating=5 STAR</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:32:15.153" level="INFO">${body} = {'id': '2', 'title': 'Robot Framework', 'description': 'RestAPI Automation in python usibg robot framework', 'pageCount': '50', 'excerpt': 'string', 'publishDate': '2022-12-16T05:43:22.937Z'}</msg>
-<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
+<msg timestamp="20221222 15:40:34.850" level="INFO">${body} = {'id': '201', 'name': 'Faysal Sarder', 'releaseDate': '2022-12-22T07:35:37.466Z', 'reviewScore': '100', 'category': 'Action', 'rating': '5 STAR'}</msg>
+<status status="PASS" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
-<var>${header}</var>
+<var>${contentType}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221216 17:32:15.153" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:15.153"/>
+<msg timestamp="20221222 15:40:34.850" level="INFO">${contentType} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20221222 15:40:34.850" endtime="20221222 15:40:34.850"/>
 </kw>
 <kw name="Put Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
-<arg>${relative_uli}/${param}</arg>
+<arg>${relative_uri}/${param}</arg>
 <arg>data=${body}</arg>
-<arg>headers=${header}</arg>
+<arg>headers=${contentType}</arg>
 <doc>*DEPRECATED* Please use `PUT On Session` instead.</doc>
-<msg timestamp="20221216 17:32:15.153" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
-<msg timestamp="20221216 17:32:16.031" level="INFO">PUT Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
- path_url=/api/v1/Books/2 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '191'} 
- body={"id": "2", "title": "Robot Framework", "description": "RestAPI Automation in python usibg robot framework", "pageCount": "50", "excerpt": "string", "publishDate": "2022-12-16T05:43:22.937Z"} 
+<msg timestamp="20221222 15:40:34.850" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20221222 15:40:35.438" level="INFO">PUT Request : url=http://localhost:8080/app/videogames/201 
+ path_url=/app/videogames/201 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '145'} 
+ body={"id": "201", "name": "Faysal Sarder", "releaseDate": "2022-12-22T07:35:37.466Z", "reviewScore": "100", "category": "Action", "rating": "5 STAR"} 
  </msg>
-<msg timestamp="20221216 17:32:16.031" level="INFO">PUT Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/2 
- status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8; v=1.0', 'Date': 'Fri, 16 Dec 2022 11:32:14 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked', 'api-supported-versions': '1.0'} 
- body={"id":2,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"} 
+<msg timestamp="20221222 15:40:35.438" level="INFO">PUT Response : url=http://localhost:8080/app/videogames/201 
+ status=500, reason= 
+ headers={'Content-Type': 'application/xml;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 22 Dec 2022 09:40:34 GMT', 'Connection': 'close'} 
+ body=&lt;Map&gt;&lt;timestamp&gt;1671702035311&lt;/timestamp&gt;&lt;status&gt;500&lt;/status&gt;&lt;error&gt;Internal Server Error&lt;/error&gt;&lt;message&gt;Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&lt;/message&gt;&lt;trace&gt;java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:311)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:97)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:87)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.&amp;lt;init&gt;(TransducedAccessor.java:235)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.reflect.TransducedAccessor.get(TransducedAccessor.java:175)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.AttributeProperty.&amp;lt;init&gt;(AttributeProperty.java:91)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:108)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.&amp;lt;init&gt;(ClassBeanInfoImpl.java:181)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:331)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.&amp;lt;init&gt;(JAXBContextImpl.java:139)&amp;#xd;
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)&amp;#xd;
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)&amp;#xd;
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)&amp;#xd;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&amp;#xd;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297)&amp;#xd;
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286)&amp;#xd;
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)&amp;#xd;
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getStoredJaxbContext(AbstractJaxbProvider.java:312)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getJAXBContext(AbstractJaxbProvider.java:297)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:264)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractJaxbProvider.getMarshaller(AbstractJaxbProvider.java:231)&amp;#xd;
+	at org.glassfish.jersey.jaxb.internal.AbstractRootElementJaxbProvider.writeTo(AbstractRootElementJaxbProvider.java:175)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:266)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:251)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:109)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:85)&amp;#xd;
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:163)&amp;#xd;
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1135)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:662)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:395)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:385)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:280)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)&amp;#xd;
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)&amp;#xd;
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)&amp;#xd;
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)&amp;#xd;
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)&amp;#xd;
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:409)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:584)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:525)&amp;#xd;
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:462)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)&amp;#xd;
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)&amp;#xd;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)&amp;#xd;
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)&amp;#xd;
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)&amp;#xd;
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)&amp;#xd;
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)&amp;#xd;
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)&amp;#xd;
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)&amp;#xd;
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)&amp;#xd;
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)&amp;#xd;
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)&amp;#xd;
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)&amp;#xd;
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)&amp;#xd;
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)&amp;#xd;
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)&amp;#xd;
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)&amp;#xd;
+	at java.base/java.lang.Thread.run(Thread.java:833)&amp;#xd;
+&lt;/trace&gt;&lt;path&gt;/app/videogames/201&lt;/path&gt;&lt;/Map&gt; 
  </msg>
-<msg timestamp="20221216 17:32:16.031" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221216 17:32:16.031" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:16.031"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.headers}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.content}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<msg timestamp="20221222 15:40:35.452" level="INFO">${response} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20221222 15:40:34.850" endtime="20221222 15:40:35.452"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:32:16.031" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<msg timestamp="20221222 15:40:35.452" level="INFO">${status_code} = 500</msg>
+<status status="PASS" starttime="20221222 15:40:35.452" endtime="20221222 15:40:35.452"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<msg timestamp="20221222 15:40:35.454" level="FAIL">500 != 200</msg>
+<status status="FAIL" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
-<var>${transferEncoding}</var>
+<var>${contentType}</var>
 <arg>${response.headers}</arg>
-<arg>Transfer-Encoding</arg>
+<arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:16.031" level="INFO">${transferEncoding} = chunked</msg>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${transferEncoding}</arg>
-<arg>chunked</arg>
+<arg>${contentType}</arg>
+<arg>application/xml</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
-</kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${apiVersion}</var>
-<arg>${response.headers}</arg>
-<arg>api-supported-versions</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221216 17:32:16.031" level="INFO">${apiVersion} = 1.0</msg>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
-</kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${apiVersion}</arg>
-<arg>1.0</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
-<var>${title}</var>
+<var>${res_body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20221216 17:32:16.031" level="INFO">${title} = {"id":2,"title":"Robot Framework","description":"RestAPI Automation in python usibg robot framework","pageCount":50,"excerpt":"string","publishDate":"2022-12-16T05:43:22.937Z"}</msg>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
-<arg>${title}</arg>
-<arg>RestAPI Automation in python usibg robot framework</arg>
+<arg>${res_body}</arg>
+<arg>Faysal Sarder</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:32:16.031" endtime="20221216 17:32:16.031"/>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
-<kw name="Should Not Contain" library="BuiltIn">
-<arg>${title}</arg>
-<arg>Robot Framework in py</arg>
-<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.047"/>
+<kw name="To Json" library="RequestsLibrary">
+<var>${json_object}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<msg timestamp="20221222 15:40:35.454" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
-<status status="PASS" starttime="20221216 17:32:15.153" endtime="20221216 17:32:16.047"/>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${user_name}</var>
+<arg>${json_object}</arg>
+<arg>$.name</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
+</kw>
+<kw name="Convert To List" library="Collections">
+<var>${user_Nm}</var>
+<arg>${user_name}</arg>
+<doc>Converts the given ``item`` to a Python ``list`` type.</doc>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${user_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${user_name}</arg>
+<arg>${user_Nm}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
+</kw>
+<status status="FAIL" starttime="20221222 15:40:34.850" endtime="20221222 15:40:35.454">500 != 200</status>
 </test>
-<test id="s1-t5" name="TC5: Delete all info of a specific book (DELETE)" line="89">
+<test id="s1-s1-s1-s1-t5" name="TC5: Deletes a video game from the DB by ID (DELETE)" line="83">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>mysession</arg>
 <arg>${base_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221216 17:32:16.047" level="INFO">Creating Session using : alias=mysession, url=https://fakerestapi.azurewebsites.net, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.047"/>
+<msg timestamp="20221222 15:40:35.454" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.454"/>
 </kw>
 <kw name="Delete Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
-<arg>${relative_uli}/206</arg>
+<arg>${relative_uri}/${param}</arg>
 <doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
-<msg timestamp="20221216 17:32:16.047" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
-<msg timestamp="20221216 17:32:16.903" level="INFO">DELETE Request : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
- path_url=/api/v1/Books/206 
+<msg timestamp="20221222 15:40:35.454" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20221222 15:40:35.917" level="INFO">DELETE Request : url=http://localhost:8080/app/videogames/201 
+ path_url=/app/videogames/201 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221216 17:32:16.903" level="INFO">DELETE Response : url=https://fakerestapi.azurewebsites.net/api/v1/Books/206 
- status=200, reason=OK 
- headers={'Content-Length': '0', 'Date': 'Fri, 16 Dec 2022 11:32:15 GMT', 'Server': 'Kestrel', 'api-supported-versions': '1.0'} 
- body=None 
+<msg timestamp="20221222 15:40:35.917" level="INFO">DELETE Response : url=http://localhost:8080/app/videogames/201 
+ status=200, reason= 
+ headers={'Content-Type': 'application/xml', 'Content-Length': '41', 'Date': 'Thu, 22 Dec 2022 09:40:35 GMT'} 
+ body={"status": "Record Deleted Successfully"} 
  </msg>
-<msg timestamp="20221216 17:32:16.903" level="INFO">J:\SQA Concepts\Rest API Testing Using Robot Framework in Python\Git\RestAPIAutomation_with_RobotFramework\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'fakerestapi.azurewebsites.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221216 17:32:16.903" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.903"/>
+<msg timestamp="20221222 15:40:35.917" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.917"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
 <arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221216 17:32:16.903" endtime="20221216 17:32:16.903"/>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20221222 15:40:35.917" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20221222 15:40:35.917" endtime="20221222 15:40:35.917"/>
 </kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${response.status_code}</arg>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
 <arg>200</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20221216 17:32:16.903" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20221216 17:32:16.903" endtime="20221216 17:32:16.903"/>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221222 15:40:35.917" endtime="20221222 15:40:35.917"/>
 </kw>
-<status status="PASS" starttime="20221216 17:32:16.047" endtime="20221216 17:32:16.903"/>
+<kw name="Convert To String" library="BuiltIn">
+<var>${res_body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20221222 15:40:35.917" level="INFO">${res_body} = {"status": "Record Deleted Successfully"}</msg>
+<status status="PASS" starttime="20221222 15:40:35.917" endtime="20221222 15:40:35.917"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${res_body}</arg>
+<arg>Record Deleted Successfully</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221222 15:40:35.917" endtime="20221222 15:40:35.917"/>
+</kw>
+<status status="PASS" starttime="20221222 15:40:35.454" endtime="20221222 15:40:35.917"/>
 </test>
-<status status="PASS" starttime="20221216 17:31:51.665" endtime="20221216 17:32:16.903"/>
+<status status="FAIL" starttime="20221222 15:40:32.533" endtime="20221222 15:40:35.917"/>
+</suite>
+<status status="FAIL" starttime="20221222 15:40:32.533" endtime="20221222 15:40:35.917"/>
+</suite>
+<status status="FAIL" starttime="20221222 15:40:32.517" endtime="20221222 15:40:35.917"/>
+</suite>
+<status status="FAIL" starttime="20221222 15:40:32.501" endtime="20221222 15:40:35.917"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="TC">TC</stat>
+<stat pass="2" fail="3" skip="0" id="s1" name="RestAPIAutomation with RobotFramework">RestAPIAutomation with RobotFramework</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s1" name="Video Game DB - Test Application">RestAPIAutomation with RobotFramework.Video Game DB - Test Application</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s1-s1" name="TestCases">RestAPIAutomation with RobotFramework.Video Game DB - Test Application.TestCases</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s1-s1-s1" name="VideoGameTC">RestAPIAutomation with RobotFramework.Video Game DB - Test Application.TestCases.VideoGameTC</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221216 17:31:51.951" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:32:12.335" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
-<msg timestamp="20221216 17:32:13.368" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20221216 17:32:15.153" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
-<msg timestamp="20221216 17:32:16.047" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20221222 15:40:32.784" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221222 15:40:33.761" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20221222 15:40:33.882" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20221222 15:40:34.850" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20221222 15:40:35.454" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20221222 15:40:35.454" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
 </errors>
 </robot>
