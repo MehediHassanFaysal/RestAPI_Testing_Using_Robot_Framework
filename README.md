@@ -11,7 +11,7 @@
 
 > [View HTML Report](https://mehedihassanfaysal.github.io/RestAPI_Testing_Using_Robot_Framework/)
 
-#### Project -2: Video Game Database
+#### Project -2: VideoGame API
 - Product Name: VideoGameDB
 - Testing Type: REST API Automation
 - Programming Language: Python
